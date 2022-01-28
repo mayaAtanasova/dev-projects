@@ -2,10 +2,12 @@
 
 <form action="/authors" method="get">
     <label>Name</label>
-    <input type="tel" name="name" value="<%= searchOptions.name %>">
+    <input type="text" name="name" value="<%= searchOptions.name %>">
     <button type="submit">Search</button>
 </form>
 <br>
-<% authors.forEach(author => { %> 
-<div><%= author.name %> </div>
-<% }) %> 
+<% authors.forEach(author=> { %>
+    <div>
+        <%= author.name %>
+    </div>
+<% }) %>
